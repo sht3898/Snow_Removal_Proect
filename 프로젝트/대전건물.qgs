@@ -1,0 +1,766 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="2.18.24">
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <customproperties/>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="건물_데이터20200918140106073" source="C:/Users/User/Desktop/sht3898/Data_Science/빅데이터인턴십/프로젝트/프로젝트/건물_데이터.csv" name="건물_데이터">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="building20200918141814515" source="C:/Users/User/Desktop/sht3898/Data_Science/빅데이터인턴십/프로젝트/프로젝트/building.csv" name="building">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="AL_30_D010_2020090520200918135614447" source="C:\Users\User\Downloads\AL_30_D010_20200905\AL_30_D010_20200905.shp" name="AL_30_D010_20200905">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Checked" id="OpenLayers_plugin_layer20200918102336117" source="" name="Daum Street">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <relations/>
+  <mapcanvas>
+    <units>meters</units>
+    <extent>
+      <xmin>224185.5768184486660175</xmin>
+      <ymin>302480.23133077658712864</ymin>
+      <xmax>258720.1555889590526931</xmax>
+      <ymax>320962.69019245309755206</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <projections>1</projections>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=tmerc +lat_0=38 +lon_0=127.0028902777778 +k=1 +x_0=200000 +y_0=500000 +ellps=bessel +units=m +no_defs</proj4>
+        <srsid>28038</srsid>
+        <srid>5174</srid>
+        <authid>EPSG:5174</authid>
+        <description>Korean 1985 / Modified Central Belt</description>
+        <projectionacronym>tmerc</projectionacronym>
+        <ellipsoidacronym>bessel</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <layer_coordinate_transform_info>
+      <layer_coordinate_transform destAuthId="EPSG:5174" srcAuthId="EPSG:5181" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20200918102336117"/>
+      <layer_coordinate_transform destAuthId="EPSG:5174" srcAuthId="EPSG:5174" srcDatumTransform="-1" destDatumTransform="-1" layerid="AL_30_D010_2020090520200918135614447"/>
+      <layer_coordinate_transform destAuthId="EPSG:5174" srcAuthId="EPSG:5174" srcDatumTransform="-1" destDatumTransform="-1" layerid="CH_00_D010_2020091620200918102331932"/>
+    </layer_coordinate_transform_info>
+  </mapcanvas>
+  <layer-tree-canvas>
+    <custom-order enabled="0">
+      <item>OpenLayers_plugin_layer20200918102336117</item>
+      <item>AL_30_D010_2020090520200918135614447</item>
+      <item>건물_데이터20200918140106073</item>
+      <item>building20200918141814515</item>
+    </custom-order>
+  </layer-tree-canvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="건물_데이터" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="건물_데이터20200918140106073" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="building" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="building20200918141814515" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="AL_30_D010_20200905" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="AL_30_D010_2020090520200918135614447" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Daum Street" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20200918102336117" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <projectlayers>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>222208.83700000029057264</xmin>
+        <ymin>299188.52300000004470348</ymin>
+        <xmax>249605.23000000044703484</xmax>
+        <ymax>333086.44400000013411045</ymax>
+      </extent>
+      <id>AL_30_D010_2020090520200918135614447</id>
+      <datasource>../../../../../../Downloads/AL_30_D010_20200905/AL_30_D010_20200905.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>AL_30_D010_20200905</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=tmerc +lat_0=38 +lon_0=127.0028902777778 +k=1 +x_0=200000 +y_0=500000 +ellps=bessel +units=m +no_defs</proj4>
+          <srsid>28038</srsid>
+          <srid>5174</srid>
+          <authid>EPSG:5174</authid>
+          <description>Korean 1985 / Modified Central Belt</description>
+          <projectionacronym>tmerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="A0">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A3">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A4">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A5">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A6">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A7">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A8">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A9">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A10">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A11">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A12">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A13">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A14">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A15">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A16">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A17">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A18">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A19">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A20">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A21">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A22">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="129,164,0,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>A0</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="라벨"/>
+        <family fieldname="" name="Gulim"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="A0" index="0" name=""/>
+        <alias field="A1" index="1" name=""/>
+        <alias field="A2" index="2" name=""/>
+        <alias field="A3" index="3" name=""/>
+        <alias field="A4" index="4" name=""/>
+        <alias field="A5" index="5" name=""/>
+        <alias field="A6" index="6" name=""/>
+        <alias field="A7" index="7" name=""/>
+        <alias field="A8" index="8" name=""/>
+        <alias field="A9" index="9" name=""/>
+        <alias field="A10" index="10" name=""/>
+        <alias field="A11" index="11" name=""/>
+        <alias field="A12" index="12" name=""/>
+        <alias field="A13" index="13" name=""/>
+        <alias field="A14" index="14" name=""/>
+        <alias field="A15" index="15" name=""/>
+        <alias field="A16" index="16" name=""/>
+        <alias field="A17" index="17" name=""/>
+        <alias field="A18" index="18" name=""/>
+        <alias field="A19" index="19" name=""/>
+        <alias field="A20" index="20" name=""/>
+        <alias field="A21" index="21" name=""/>
+        <alias field="A22" index="22" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="196479890">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="A0"/>
+          <column width="-1" hidden="0" type="field" name="A1"/>
+          <column width="-1" hidden="0" type="field" name="A2"/>
+          <column width="-1" hidden="0" type="field" name="A3"/>
+          <column width="-1" hidden="0" type="field" name="A4"/>
+          <column width="-1" hidden="0" type="field" name="A5"/>
+          <column width="-1" hidden="0" type="field" name="A6"/>
+          <column width="-1" hidden="0" type="field" name="A7"/>
+          <column width="-1" hidden="0" type="field" name="A8"/>
+          <column width="-1" hidden="0" type="field" name="A9"/>
+          <column width="-1" hidden="0" type="field" name="A10"/>
+          <column width="-1" hidden="0" type="field" name="A11"/>
+          <column width="-1" hidden="0" type="field" name="A12"/>
+          <column width="-1" hidden="0" type="field" name="A13"/>
+          <column width="-1" hidden="0" type="field" name="A14"/>
+          <column width="-1" hidden="0" type="field" name="A15"/>
+          <column width="-1" hidden="0" type="field" name="A16"/>
+          <column width="-1" hidden="0" type="field" name="A17"/>
+          <column width="-1" hidden="0" type="field" name="A18"/>
+          <column width="-1" hidden="0" type="field" name="A19"/>
+          <column width="-1" hidden="0" type="field" name="A20"/>
+          <column width="-1" hidden="0" type="field" name="A21"/>
+          <column width="-1" hidden="0" type="field" name="A22"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="A0" expression=""/>
+        <default field="A1" expression=""/>
+        <default field="A2" expression=""/>
+        <default field="A3" expression=""/>
+        <default field="A4" expression=""/>
+        <default field="A5" expression=""/>
+        <default field="A6" expression=""/>
+        <default field="A7" expression=""/>
+        <default field="A8" expression=""/>
+        <default field="A9" expression=""/>
+        <default field="A10" expression=""/>
+        <default field="A11" expression=""/>
+        <default field="A12" expression=""/>
+        <default field="A13" expression=""/>
+        <default field="A14" expression=""/>
+        <default field="A15" expression=""/>
+        <default field="A16" expression=""/>
+        <default field="A17" expression=""/>
+        <default field="A18" expression=""/>
+        <default field="A19" expression=""/>
+        <default field="A20" expression=""/>
+        <default field="A21" expression=""/>
+        <default field="A22" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "A0", '&lt;NULL>' )</previewExpression>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
+      <extent>
+        <xmin>-30000</xmin>
+        <ymin>-60000</ymin>
+        <xmax>494288</xmax>
+        <ymax>988576</ymax>
+      </extent>
+      <id>OpenLayers_plugin_layer20200918102336117</id>
+      <datasource></datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Daum Street</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=tmerc +lat_0=38 +lon_0=127 +k=1 +x_0=200000 +y_0=500000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>28045</srsid>
+          <srid>5181</srid>
+          <authid>EPSG:5181</authid>
+          <description>Korea 2000 / Central Belt</description>
+          <projectionacronym>tmerc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="ol_layer_type" value="Daum Street"/>
+      </customproperties>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+      <id>building20200918141814515</id>
+      <datasource>./building.csv</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>building</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties/>
+      <provider encoding="EUC-KR">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="A0">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A3">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A4">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A5">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A6">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A7">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A8">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A9">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A10">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A11">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A12">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A13">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A14">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A15">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A16">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A17">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A18">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A19">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A20">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A21">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A22">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="A0" index="0" name=""/>
+        <alias field="A1" index="1" name=""/>
+        <alias field="A2" index="2" name=""/>
+        <alias field="A3" index="3" name=""/>
+        <alias field="A4" index="4" name=""/>
+        <alias field="A5" index="5" name=""/>
+        <alias field="A6" index="6" name=""/>
+        <alias field="A7" index="7" name=""/>
+        <alias field="A8" index="8" name=""/>
+        <alias field="A9" index="9" name=""/>
+        <alias field="A10" index="10" name=""/>
+        <alias field="A11" index="11" name=""/>
+        <alias field="A12" index="12" name=""/>
+        <alias field="A13" index="13" name=""/>
+        <alias field="A14" index="14" name=""/>
+        <alias field="A15" index="15" name=""/>
+        <alias field="A16" index="16" name=""/>
+        <alias field="A17" index="17" name=""/>
+        <alias field="A18" index="18" name=""/>
+        <alias field="A19" index="19" name=""/>
+        <alias field="A20" index="20" name=""/>
+        <alias field="A21" index="21" name=""/>
+        <alias field="A22" index="22" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="332204670">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="A0"/>
+          <column width="-1" hidden="0" type="field" name="A1"/>
+          <column width="-1" hidden="0" type="field" name="A2"/>
+          <column width="-1" hidden="0" type="field" name="A3"/>
+          <column width="-1" hidden="0" type="field" name="A4"/>
+          <column width="-1" hidden="0" type="field" name="A5"/>
+          <column width="-1" hidden="0" type="field" name="A6"/>
+          <column width="-1" hidden="0" type="field" name="A7"/>
+          <column width="-1" hidden="0" type="field" name="A8"/>
+          <column width="-1" hidden="0" type="field" name="A9"/>
+          <column width="-1" hidden="0" type="field" name="A10"/>
+          <column width="-1" hidden="0" type="field" name="A11"/>
+          <column width="-1" hidden="0" type="field" name="A12"/>
+          <column width="-1" hidden="0" type="field" name="A13"/>
+          <column width="-1" hidden="0" type="field" name="A14"/>
+          <column width="-1" hidden="0" type="field" name="A15"/>
+          <column width="-1" hidden="0" type="field" name="A16"/>
+          <column width="-1" hidden="0" type="field" name="A17"/>
+          <column width="-1" hidden="0" type="field" name="A18"/>
+          <column width="-1" hidden="0" type="field" name="A19"/>
+          <column width="-1" hidden="0" type="field" name="A20"/>
+          <column width="-1" hidden="0" type="field" name="A21"/>
+          <column width="-1" hidden="0" type="field" name="A22"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="A0" expression=""/>
+        <default field="A1" expression=""/>
+        <default field="A2" expression=""/>
+        <default field="A3" expression=""/>
+        <default field="A4" expression=""/>
+        <default field="A5" expression=""/>
+        <default field="A6" expression=""/>
+        <default field="A7" expression=""/>
+        <default field="A8" expression=""/>
+        <default field="A9" expression=""/>
+        <default field="A10" expression=""/>
+        <default field="A11" expression=""/>
+        <default field="A12" expression=""/>
+        <default field="A13" expression=""/>
+        <default field="A14" expression=""/>
+        <default field="A15" expression=""/>
+        <default field="A16" expression=""/>
+        <default field="A17" expression=""/>
+        <default field="A18" expression=""/>
+        <default field="A19" expression=""/>
+        <default field="A20" expression=""/>
+        <default field="A21" expression=""/>
+        <default field="A22" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE("A0", '&lt;NULL>')||', '||COALESCE("A1", '&lt;NULL>')||', '||COALESCE("A2", '&lt;NULL>')||', '||COALESCE("A3", '&lt;NULL>')||', '||COALESCE("A4", '&lt;NULL>')||', '||COALESCE("A5", '&lt;NULL>')||', '||COALESCE("A6", '&lt;NULL>')||', '||COALESCE("A7", '&lt;NULL>')||', '||COALESCE("A8", '&lt;NULL>')||', '||COALESCE("A9", '&lt;NULL>')||', '||COALESCE("A10", '&lt;NULL>')||', '||COALESCE("A11", '&lt;NULL>')||', '||COALESCE("A12", '&lt;NULL>')||', '||COALESCE("A13", '&lt;NULL>')||', '||COALESCE("A14", '&lt;NULL>')||', '||COALESCE("A15", '&lt;NULL>')||', '||COALESCE("A16", '&lt;NULL>')||', '||COALESCE("A17", '&lt;NULL>')||', '||COALESCE("A18", '&lt;NULL>')||', '||COALESCE("A19", '&lt;NULL>')||', '||COALESCE("A20", '&lt;NULL>')||', '||COALESCE("A21", '&lt;NULL>')||', '||COALESCE("A22", '&lt;NULL>')</previewExpression>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+      <id>건물_데이터20200918140106073</id>
+      <datasource>./건물_데이터.csv</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>건물_데이터</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties/>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="A0">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A3">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A4">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A5">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A6">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A7">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A8">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A9">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A10">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A11">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A12">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A13">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A14">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A15">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A16">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A17">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A18">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A19">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A20">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A21">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A22">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="A0" index="0" name=""/>
+        <alias field="A1" index="1" name=""/>
+        <alias field="A2" index="2" name=""/>
+        <alias field="A3" index="3" name=""/>
+        <alias field="A4" index="4" name=""/>
+        <alias field="A5" index="5" name=""/>
+        <alias field="A6" index="6" name=""/>
+        <alias field="A7" index="7" name=""/>
+        <alias field="A8" index="8" name=""/>
+        <alias field="A9" index="9" name=""/>
+        <alias field="A10" index="10" name=""/>
+        <alias field="A11" index="11" name=""/>
+        <alias field="A12" index="12" name=""/>
+        <alias field="A13" index="13" name=""/>
+        <alias field="A14" index="14" name=""/>
+        <alias field="A15" index="15" name=""/>
+        <alias field="A16" index="16" name=""/>
+        <alias field="A17" index="17" name=""/>
+        <alias field="A18" index="18" name=""/>
+        <alias field="A19" index="19" name=""/>
+        <alias field="A20" index="20" name=""/>
+        <alias field="A21" index="21" name=""/>
+        <alias field="A22" index="22" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="324921079">
+        <columns/>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="A0" expression=""/>
+        <default field="A1" expression=""/>
+        <default field="A2" expression=""/>
+        <default field="A3" expression=""/>
+        <default field="A4" expression=""/>
+        <default field="A5" expression=""/>
+        <default field="A6" expression=""/>
+        <default field="A7" expression=""/>
+        <default field="A8" expression=""/>
+        <default field="A9" expression=""/>
+        <default field="A10" expression=""/>
+        <default field="A11" expression=""/>
+        <default field="A12" expression=""/>
+        <default field="A13" expression=""/>
+        <default field="A14" expression=""/>
+        <default field="A15" expression=""/>
+        <default field="A16" expression=""/>
+        <default field="A17" expression=""/>
+        <default field="A18" expression=""/>
+        <default field="A19" expression=""/>
+        <default field="A20" expression=""/>
+        <default field="A21" expression=""/>
+        <default field="A22" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+  </projectlayers>
+  <properties>
+    <Measurement>
+      <DistanceUnits type="QString"></DistanceUnits>
+      <AreaUnits type="QString"></AreaUnits>
+    </Measurement>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+      <ProjectCRSID type="int">3452</ProjectCRSID>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <Digitizing>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <LayerSnappingList type="QStringList"/>
+      <LayerSnappingEnabledList type="QStringList"/>
+      <SnappingMode type="QString">current_layer</SnappingMode>
+      <AvoidIntersectionsList type="QStringList"/>
+      <LayerSnappingToleranceUnitList type="QStringList"/>
+      <LayerSnapToList type="QStringList"/>
+      <DefaultSnapType type="QString">off</DefaultSnapType>
+      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+      <LayerSnappingToleranceList type="QStringList"/>
+    </Digitizing>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+  </properties>
+  <visibility-presets/>
+</qgis>
