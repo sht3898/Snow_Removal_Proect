@@ -1,13 +1,13 @@
 # 필수 패키지
-# install.packages("dplyr")
-# install.packages("ggplot2")
-# install.packages("lubridate")
-# install.packages("tidyverse")
-# install.packages("ggmap")
-# install.packages("raster")
-# install.packages("rgeos")
-# install.packages("maptools")
-# install.packages("rgdal")
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("lubridate")
+install.packages("tidyverse")
+install.packages("ggmap")
+install.packages("raster")
+install.packages("rgeos")
+install.packages("maptools")
+install.packages("rgdal")
 
 
 # 라이브러리
