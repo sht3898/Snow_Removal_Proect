@@ -150,7 +150,7 @@ ggplot(union, aes(범위, 사고피해자수))
 
 cut_value <- cut(union$temp, breaks=c(-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
 p <- table(cut_value)
-barplot(p, main="대전", xlab="온도 구간", ylab="사고피해자수수", ylim=c(0, 20))
+barplot(p, main="대전", xlab="온도 구간", ylab="사고피해자수수", ylim=c(0, 20), col="skyblue")
 
 ggplot(p, aes(범위)) + geom_bar()
 ?barplot
@@ -159,29 +159,57 @@ ggplot(p, aes(범위)) + geom_bar()
 union_seogu <- union %>%
   filter(구=="서구")
 seogu_p <- table(cut(union_seogu$temp, breaks=c(-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)))
-barplot(seogu_p,main="서구", xlab="온도 구간", ylab="사고피해자수수", ylim=c(0, 10))
+barplot(seogu_p,main="서구", xlab="온도 구간", ylab="사고피해자수수", ylim=c(0, 10), col="skyblue")
 
 # 중구
 union_junggu <- union %>%
   filter(구=="중구")
 junggu_p <- table(cut(union_junggu$temp, breaks=c(-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)))
-barplot(junggu_p,main="중구", xlab="온도 구간", ylab="사고피해자수수", ylim=c(0, 10))
+barplot(junggu_p,main="중구", xlab="온도 구간", ylab="사고피해자수수", ylim=c(0, 10), col="skyblue")
 
 # 유성구
 union_yuseonggu <- union %>%
   filter(구=="유성구")
 yuseonggu_p <- table(cut(union_yuseonggu$temp, breaks=c(-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)))
-barplot(yuseonggu_p,main="유성구", xlab="온도 구간", ylab="사고피해자수수", ylim=c(0, 10))
+barplot(yuseonggu_p,main="유성구", xlab="온도 구간", ylab="사고피해자수수", ylim=c(0, 10), col="skyblue")
 
 # 대덕구
 union_daedeokgu <- union %>%
   filter(구=="대덕구")
 daedeokgu_p <- table(cut(union_daedeokgu$temp, breaks=c(-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)))
-barplot(daedeokgu_p,main="유성구", xlab="온도 구간", ylab="사고피해자수수", ylim=c(0, 10))
+barplot(daedeokgu_p,main="유성구", xlab="온도 구간", ylab="사고피해자수수", ylim=c(0, 10), col="skyblue")
 
 # 동구
 union_donggu <- union %>%
   filter(구=="동구")
 donggu_p <- table(cut(union_donggu$temp, breaks=c(-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)))
-barplot(donggu_p,main="동구", xlab="온도 구간", ylab="사고피해자수수", ylim=c(0, 10))
+barplot(donggu_p,main="동구", xlab="온도 구간", ylab="사고피해자수수", ylim=c(0, 10), col="skyblue")
 
+
+# 그래프 합치기
+seogu <- c(0, 3, 1, 5, 1, 2, 8, 6, 6, 2, 0, 0, 1, 1, 0, 3, 1, 0, 0, 0)
+daedeok <- c(0, 0, 0, 2, 2, 0 ,0, 2, 1, 1 ,2 ,1 ,3, 1, 0, 0, 0, 0, 0, 0)
+yuseong <- c(2, 3, 2, 3, 7, 0, 6, 4, 6, 8, 2, 3, 7, 2, 1, 4, 0, 0, 0, 0)
+data_range <- c(-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+# 서구 대덕구 유성구
+qty <- data.frame(seogu, daedeok, yuseong)
+dimnames(qty) <- list(row=c("-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"), col=names(qty))
+colnames(qty_t) <- c(-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+barplot(as.matrix(qty_t), main="서구 대덕구 유성구",
+        beside=T, col=c("grey", "navy", "skyblue"), ylim=c(0, 10), xlab="기온", ylab="사고피해자수")
+legend(60,10, c("서구", "대덕구", "유성구"), cex=0.8, fill=c("grey", "navy", "skyblue"))
+
+# 중구 동구
+junggu <- c(1,0,2,2,0,0,1,3,1,4,0,0,1,3,0,0,1,0,0,0)
+donggu <- c(0,1,1,1,2,0,1,2,2,4,1,0,0,2,2,0,1,0,0,0)
+qty2 <- data.frame(junggu, donggu)
+qty2_t <- t(qty2)
+barplot(as.matrix(qty2_t), main="중구 동구",
+        beside=T, col=c("gray", "navy"), ylim=c(0, 10), xlab="기온", ylab="사고피해자수")
+legend(45,10,c("중구", "동구"), cex=0.8, fill=c("gray", "navy"))
+
+total <- data.frame(daedeok, donggu, seogu, yuseong, junggu)
+total_t <- t(total)
+barplot(as.matrix(total_t), main="대전 전체",
+        beside=T, col=rainbow(nrow(total_t)), ylim=c(0,10), xlab="기온", ylab="사고피해자수")
